@@ -3,6 +3,11 @@ Deploying a Windows Azure Web Site
 
 This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows Azure Bootcamp Perth 2014.
 
+1. Log into the [Windows Azure Management Portal](http://manage.windowsazure.com)
+2. Click on `New` on the bottom right and select `Compute` > `Web Site` > `Quick Create`
+    * Enter a unique name for your site in the `URL` field
+    * Select a Region to deploy to in the `Region` field
+    ![Creating a site in the portal](create_site.png)
 1. Download and install the [Windows Azure command-line tools for Windows](http://go.microsoft.com/?linkid=9828653&clcid=0x409) (found via the [Windows Azure downloads page](http://www.windowsazure.com/en-us/downloads/)).
     * The documentation for the command-line tools is at [http://www.windowsazure.com/en-us/documentation/articles/xplat-cli/](http://www.windowsazure.com/en-us/documentation/articles/xplat-cli/) - feel free to read it to get more detailed explanations of the below steps
 2. Open a **new** command window and execute `azure` to see an overview of the commands you can run
@@ -10,6 +15,11 @@ This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows
 
 
 If you are a superstar and you finished the hands-on lab early or you are revisiting this lab after the fact there are some more labs we've included for you below that cover some of the other concepts/options around creating and deploying Windows Azure Web Sites. Feel free to pick any of them that interest you.
+
+Further reading:
+
+* [How to Deploy a Windows Azure Web Site](http://www.windowsazure.com/en-us/documentation/articles/web-sites-deploy/)
+* [How to configure Web Sites](http://www.windowsazure.com/en-us/documentation/articles/web-sites-configure/)
 
 Advanced: Create a continuous integration and deployment pipeline using Visual Studio Online
 --------------------------------------------------------------------------------------------
