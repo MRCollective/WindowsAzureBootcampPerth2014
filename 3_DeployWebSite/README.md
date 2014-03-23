@@ -5,15 +5,15 @@ This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows
 
 * ASP.NET (e.g. MVC, WebAPI, Web Forms, Web Pages)
 * Classic ASP
-* PHP
 * nodeJS
+* PHP
 
 1. Log into the [Windows Azure Management Portal](http://manage.windowsazure.com)
 2. Click on `New` on the bottom right and select `Compute` > `Web Site` > `Quick Create`
     * Enter a unique name for your site in the `URL` field
     * Select a Region to deploy to in the `Region` field
     ![Creating a site in the portal](create_site.png)
-3. Download the [AllInOne zip file](AllInOne.zip) and unzip it on your computer
+3. Download the [AllInOne zip file](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/3_DeployWebSite/AllInOne.zip) and unzip it on your computer
 4. Open Visual Studio and from the `File` menu choose `Open a New Website` and navigate to and select the `AllInOne` folder that you unzipped
     ![Open new website in Visual Studio](open_website.png)
 5. Right cick the site and Select `Publish Web Site`
@@ -22,8 +22,12 @@ This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows
     ![Import Profile in Visual Studio](import_profile.png)
 7. If you haven't already then `Sign In` with your Windows Azure Microsoft account
     ![Sign In to Windows Azure with Visual Studio](sign_in.png)
-8. Once signed in select the site to deploy to as the one you created in step 2
+8. Once signed in select the site to deploy to as the one you created in step 2 and click `OK`
     ![Select site to deploy to with Visual Studio](select_site.png)
+9. The `Connection` tab should show with pre-populated credentials; click `Next` and then click `Publish` (leave the defaults on the next screen)
+    ![Pre-populated publishing credentials in Visual Studio](prepopulated_credentials.png)
+10. Visual Studio should publish the site for you and open it on your defaullt web browser
+    ![Deployed website](deployed_site.png)
 
 If you are a superstar and you finished the hands-on lab early or you are revisiting this lab after the fact there are some more labs we've included for you below that cover some of the other concepts/options around creating and deploying Windows Azure Web Sites. Feel free to pick any of them that interest you.
 
