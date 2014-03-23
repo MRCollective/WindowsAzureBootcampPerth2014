@@ -66,7 +66,7 @@ This is based on the [blog post by Scott Hanselman](http://www.hanselman.com/blo
     * [https://<site>.scm.azurewebsites.net/azurejobs/](https://<site>.scm.azurewebsites.net/azurejobs/)
     ![Web Job dashboard](webjob_dashboard.png)
 15. Open up the storage account that you are using for the web job inside of Visual Studio `View > Server Explorer > Windows Azure > Storage` (or any other tool of choice)
-16. Drop in [sample.png](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/6_SQLDatabaseAndCache/sample.png) to the input blob container
+16. Drop in [sample.png](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/6_WebJobsAndSQLDatabase/sample.png) to the input blob container
 17. Wait for the file to get processed into the output directory
     * It should be smaller and the Web Jobs dashboard and log should show that it successfully processed
     ![Web Job success](success.png)
