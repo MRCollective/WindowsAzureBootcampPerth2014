@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "WorkerRole", "WorkerRole\WorkerRole.ccproj", "{461F35FF-5E9C-4BD0-A7FB-A8D08E1A4296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{0AE72BB2-A7AD-4CB3-BD4C-109ED4C6C5A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{461F35FF-5E9C-4BD0-A7FB-A8D08E1A4296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461F35FF-5E9C-4BD0-A7FB-A8D08E1A4296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461F35FF-5E9C-4BD0-A7FB-A8D08E1A4296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461F35FF-5E9C-4BD0-A7FB-A8D08E1A4296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE72BB2-A7AD-4CB3-BD4C-109ED4C6C5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE72BB2-A7AD-4CB3-BD4C-109ED4C6C5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE72BB2-A7AD-4CB3-BD4C-109ED4C6C5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE72BB2-A7AD-4CB3-BD4C-109ED4C6C5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
