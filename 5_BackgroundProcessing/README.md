@@ -7,6 +7,7 @@ Preparation
 -----------
 
 1. Deploy the [Worker Role](WorkerRole) project
+    * Be sure to create the `ServiceConfiguration.Cloud.cscfg` file with a real diagnostics connection string
 2. Build the [Web Job](WebJob) project, zip the contents of the `bin` directory and upload it to the WebJobs tab of a Web Site and set up the data and runtime storage account for that Web Site
 3. Create a Scheduled Job in the portal to insert a queue message every hour
 
