@@ -28,8 +28,9 @@ This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows
     ![Pre-populated publishing credentials in Visual Studio](prepopulated_credentials.png)
 10. Visual Studio should publish the site for you and open it on your defaullt web browser
     ![Deployed website](deployed_site.png)
+11. Click around in the different links and check out the code that generated them to see all the different platforms that are working out-of-the-box
 
-If you are a superstar and you finished the hands-on lab early or you are revisiting this lab after the fact there are some more labs we've included for you below that cover some of the other concepts/options around creating and deploying Windows Azure Web Sites. Feel free to pick any of them that interest you.
+If you are a superstar and you finished the hands-on lab early or you are revisiting this lab after the fact there are some more labs we've included for you below that cover some of the other concepts/options around creating and deploying Windows Azure Web Sites. Feel free to pick any of them that interest you below.
 
 Further reading:
 
