@@ -60,12 +60,14 @@ This is based on the [blog post by Scott Hanselman](http://www.hanselman.com/blo
 12. Go to the `Configure` tab for your Web Site in the Windows Azure portal and add the storage account connection string for the `AzureJobsRuntime` and `AzureJobsData` connection strings
     ![Connection string configuration](config_settings.png)
 13. Look at the status of the web job in the WebJobs tab of your Web Site and ensure it's set to Running
-    ![Web Job dashboard](webjob_dashboard.png)
+    ![Web Job status](webjob_status.png)
 14. Look at the logs and dashboard for your Web Job to monitor what happens when it's invoked
     * [https://<site>.scm.azurewebsites.net/vfs/data/jobs/continuous/PngQuantisation/job_log.txt](https://<site>.scm.azurewebsites.net/vfs/data/jobs/continuous/PngQuantisation/job_log.txt)
     * [https://<site>.scm.azurewebsites.net/azurejobs/](https://<site>.scm.azurewebsites.net/azurejobs/)
+    ![Web Job dashboard](webjob_dashboard.png)
 15. Open up the storage account that you are using for the web job inside of Visual Studio `View > Server Explorer > Windows Azure > Storage` (or any other tool of choice)
 16. Drop in [sample.png](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/6_SQLDatabaseAndCache/sample.png) to the input blob container
 17. Wait for the file to get processed into the output directory
     * It should be smaller and the Web Jobs dashboard and log should show that it successfully processed
+    ![Web Job success](success.png)
 
