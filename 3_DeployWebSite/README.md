@@ -1,7 +1,7 @@
 Deploying a Windows Azure Web Site
 ==================================
 
-This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows Azure Bootcamp Perth 2014. We are going to be deploying the [AllInOne](https://github.com/WindowsAzure-Samples/AllInOne) example code to a Windows Azure Web Site that we create. This demonstrates how easy and quick it is to get up and running with a Web Site in Azure that can run (out-of-the-box):
+This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows Azure Bootcamp Perth 2014. We are going to be deploying the [AllInOne](https://github.com/MRCollective/AllInOne) example code to a Windows Azure Web Site that we create. This demonstrates how easy and quick it is to get up and running with a Web Site in Azure that can run (out-of-the-box):
 
 * ASP.NET (e.g. MVC, WebAPI, Web Forms, Web Pages)
 * Classic ASP
