@@ -15,40 +15,40 @@ This is based on the [blog post by Scott Hanselman](http://www.hanselman.com/blo
 3. `Install-Package nquant`
 4. `Install-Package Microsoft.WindowsAzure.Jobs.Host -pre`
 5. Change `Program.cs` to include this:
-```c#
-using Microsoft.WindowsAzure.Jobs;
-using nQuant;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.IO;
+    ```c#
+    using Microsoft.WindowsAzure.Jobs;
+    using nQuant;
+    using System.Drawing;
+    using System.Drawing.Imaging;
+    using System.IO;
 
-namespace ConsoleApplication1
-{
-    class Program
+    namespace ConsoleApplication1
     {
-        static void Main(string[] args)
+        class Program
         {
-            JobHost host = new JobHost();
-            host.RunAndBlock();
-        }
-
-        public static void SquishNewlyUploadedPNGs(
-            [BlobInput("input/{name}")] Stream input,
-            [BlobOutput("output/{name}")] Stream output)
-        {
-            var quantizer = new WuQuantizer();
-            using (var bitmap = new Bitmap(input))
+            static void Main(string[] args)
             {
-                using (var quantized = quantizer.QuantizeImage(bitmap))
-                {
-                    quantized.Save(output, ImageFormat.Png);
-                }
+                JobHost host = new JobHost();
+                host.RunAndBlock();
             }
 
+            public static void SquishNewlyUploadedPNGs(
+                [BlobInput("input/{name}")] Stream input,
+                [BlobOutput("output/{name}")] Stream output)
+            {
+                var quantizer = new WuQuantizer();
+                using (var bitmap = new Bitmap(input))
+                {
+                    using (var quantized = quantizer.QuantizeImage(bitmap))
+                    {
+                        quantized.Save(output, ImageFormat.Png);
+                    }
+                }
+
+            }
         }
     }
-}
-```
+    ```
 6. Build the solution
 7. Go to `bin\Debug` and zip up all the files up
 8. Go to the WebJobs tab for a Web Site in the Windows Azure portal
