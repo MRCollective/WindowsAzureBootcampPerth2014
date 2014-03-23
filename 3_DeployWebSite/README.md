@@ -1,7 +1,7 @@
-Global Windows Azure Bootcamp Perth 2014
-========================================
+Deploying a Windows Azure Web Site
+==================================
 
-This is a hands-on lab for deploying a Windows Azure Web Site.
+This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows Azure Bootcamp Perth 2014.
 
 1. Download and install the [Windows Azure command-line tools for Windows](http://go.microsoft.com/?linkid=9828653&clcid=0x409) (found via the [Windows Azure downloads page](http://www.windowsazure.com/en-us/downloads/)).
     * The documentation for the command-line tools is at [http://www.windowsazure.com/en-us/documentation/articles/xplat-cli/](http://www.windowsazure.com/en-us/documentation/articles/xplat-cli/) - feel free to read it to get more detailed explanations of the below steps
@@ -9,24 +9,33 @@ This is a hands-on lab for deploying a Windows Azure Web Site.
     * If it complains that it can't find `azure` then your `PATH` variable wasn't updated and you need to open `Windows Explorer` right-click on `Computer` and select `Properties` and then click on the `Environment Variables` button and click `OK` and `OK` again.
 
 
+If you are a superstar and you finished the hands-on lab early or you are revisiting this lab after the fact there are some more labs we've included for you below that cover some of the other concepts/options around creating and deploying Windows Azure Web Sites. Feel free to pick any of them that interest you.
+
+Advanced: Create a continuous integration and deployment pipeline using Visual Studio Online
+--------------------------------------------------------------------------------------------
+
+There are a bunch of options when it comes to using Windows Azure Web Sites with continuous integration and as part of automated deployment pipelines. There is an out-of-the-box experience with the recently launched Visual Studio Online (previously called Team Foundation Service) where in a few clicks you can create a continuous integration build that compiles your code and runs your tests and then if the tests pass triggers a deployment to Azure. The out-of-the-box experience will only work if you have a fairly basic project and we would expect a different setup for serious production websites, but it's a great example of the power of the Windows Azure platform so we've included it as a lab for you.
+
+1. This tutorial is pretty good (barring a few spelling mistakes here and there: [http://irisclasson.com/2014/01/11/visual-studio-online-setup-speed-test-and-guide-continuous-integration-and-deployment-pipeline/](http://irisclasson.com/2014/01/11/visual-studio-online-setup-speed-test-and-guide-continuous-integration-and-deployment-pipeline/)
+
 
 Advanced: Create a site using the command-line tools
----------------------------------------------------------
+----------------------------------------------------
 1. Download your `.publishsettings` file that contains the credentials for your Windows Azure account to perform API requests by executing `azure account download` in the command line, which will open a browser window and require you to log into your  Azure account
 2. Find the location of the downloaded `.publishsettings` file
 3. Import the `.publishsettings` file into the Azure commandline by using `azure account import {path to .publishsettings file}`
     * Delete the downloaded `.publishsettings` file
     * If you have production instances on your subscription then read the documentation to find out where it stores the settings and how to encrypt the directory it's in
-5. Find out all the locations that you can deploy to with `azure site location list`
-6. Create a new website using `azure site create "<your_unique_site_name>" --location "A Valid Location"`
+4. Find out all the locations that you can deploy to with `azure site location list`
+5. Create a new website using `azure site create "<your_unique_site_name>" --location "A Valid Location"`
     * You can also leave out the `--location` option and it will prompt you for the location to deploy to
-7. View the site status using `azure site list` or by looking in the portal at your Web Sites
-8. The command-line tools are very discoverable - you can navigate the possible list of commands by executing `azure` and seeing the list of command categories and then `azure [category]` to see the list of commands for a given category then to see the options for a particular command execute `azure [category] [command] -h`
+6. View the site status using `azure site list` or by looking in the portal at your Web Sites
+7. The command-line tools are very discoverable - you can navigate the possible list of commands by executing `azure` and seeing the list of command categories and then `azure [category]` to see the list of commands for a given category then to see the options for a particular command execute `azure [category] [command] -h`
     * Feel free to play around and see all of the options that are available to you
 
 Advanced: Use git for publishing
 ----------------------------------
-This requires you to have Git set up on your machine.
+This requires you to have Git set up on your machine and to have done steps 1-3 of the "Create a site using the command-line tools" lab above. 
 
 1. Go to the Dashboard of a Web Site in the Windows Azure portal
 2. Click on the `Reset your deployment credentials link` and create some credentials
