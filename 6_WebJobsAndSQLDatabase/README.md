@@ -1,12 +1,7 @@
-SQL Database and Cache
-======================
+Web Jobs and Azure SQL Database
+===============================
 
-This is a hands-on lab for using Azure SQL Database and Cache.
-
-If you finish early then check out the advanced lab below.
-
-Advanced: Create Web Job to do PNG Quantization
------------------------------------------------
+This is a hands-on lab for using Web Jobs with an advanced lab for using Azure SQL Database for those that finish early.
 
 This is based on the [blog post by Scott Hanselman](http://www.hanselman.com/blog/IntroducingWindowsAzureWebJobs.aspx). See also the [Getting Started with the Web Jobs SDK](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/getting-started-with-windows-azure-webjobs) post.
 
@@ -71,3 +66,11 @@ This is based on the [blog post by Scott Hanselman](http://www.hanselman.com/blo
     * It should be smaller and the Web Jobs dashboard and log should show that it successfully processed
     ![Web Job success](success.png)
 
+Advanced: Azure SQL Database
+----------------------------
+
+One of the things you need to deal with when using Azure SQL Database is dealing with transient errors - to that end Rob Moore has created some demo code to illustrate the effects of transient errors. This lab involves playing around with that code to see how easy it is to connect to an Azure SQL Database (but keeping in mind the fact you have to use transient fault protection) and if you have the time then to actually exercise the transient errors. The codebase also demonstrates Azure Storage connectivity.
+
+1. Navigate to the [demo site](https://github.com/robdmoore/SQLAzureTransientDemo) and follow the instructions to exercise the demo
+2. Initially, only deploy the site to one Windows Azure instance and study the code locally to try and understand how it works
+3. If you have time then do the full demo to try and see the transient errors happen (as explained in the demo site)
