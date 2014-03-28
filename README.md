@@ -9,7 +9,7 @@ Overview
 1. Presentation: [Introduction to Windows Azure](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/1_Introduction/Introduction.pptx)
 2. Presentation: [Web Apps in Azure](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/2_WebApps/WebApps.pptx)
 3. Hands-on-lab: [Deploy an Azure Web Site](3_DeployWebSite/README.md)
-4. Presentation: [Storage / Caching / Databases](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/blob/master/4_StorageDatabasesCaching/StorageDatabasesCaching.pptx)
+4. Presentation: [Storage / Caching / Databases](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/4_StorageDatabasesCaching/StorageDatabasesCaching.pptx)
 5. Demo: [Background Processing](5_BackgroundProcessing/README.md)
 6. Hands-on-lab: [Web Jobs and Azure SQL Database](6_WebJobsAndSQLDatabase/README.md)
 7. Presentation: [Authentication in Azure](https://github.com/MRCollective/WindowsAzureBootcampPerth2014/raw/master/7_Authentication/Authentication.pptx)
