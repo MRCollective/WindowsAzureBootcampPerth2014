@@ -8,8 +8,16 @@ This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows
 * nodeJS
 * PHP
 
+Prerequisites
+-------------
+
+Ensure you have Visual Studio 2012 or Visual Studio 2013 (Express is fine) and Windows Azure SDK 2.2.
+
+Instructions
+------------
+
 1. Log into the [Windows Azure Management Portal](http://manage.windowsazure.com)
-2. Click on `New` on the bottom right and select `Compute` > `Web Site` > `Quick Create`
+2. Click on `New` on the bottom left and select `Compute` > `Web Site` > `Quick Create`
     * Enter a unique name for your site in the `URL` field
     * Select a Region to deploy to in the `Region` field
     ![Creating a site in the portal](create_site.png)
@@ -21,6 +29,7 @@ This is a hands-on lab for deploying a Windows Azure Web Site for Global Windows
 6. Select the `Import Profile` button
     ![Import Profile in Visual Studio](import_profile.png)
 7. If you haven't already then `Sign In` with your Windows Azure Microsoft account
+    * If you don't have this option then make sure you have version 2.2 of the Azure SDK
     ![Sign In to Windows Azure with Visual Studio](sign_in.png)
 8. Once signed in select the site to deploy to as the one you created in step 2 and click `OK`
     ![Select site to deploy to with Visual Studio](select_site.png)
