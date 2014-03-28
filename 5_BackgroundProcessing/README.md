@@ -12,7 +12,7 @@ Preparation
 3. Create a Scheduled Job in the portal to insert a queue message every hour
 4. Ensure you have the Worker Role and Web Job solutions open in Visual Studio instances
 5. Ensure you have Azure Management Studio open on the `WADLogsTable` table
-6. Have the Kudu portal open and ready
+6. Have the Kudu Web Jobs portal open and ready
 
 Demo
 ----
